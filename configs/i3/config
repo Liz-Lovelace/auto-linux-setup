@@ -125,8 +125,11 @@ client.focused_inactive $cMain  $cBack #ff4444 $cBack   $cBack
 client.unfocused        #aa0000  #000000 #aa0000 $cBack   $cBack
 client.urgent           #ffff00  #000000 #aa0000 $cBack   #ffff00
 client.placeholder      #aa0000  #000000 #aa0000 $cBack   #ff00ff
-client.background                $cDardback
+client.background                $cDarkback
 
+#===========AFTER BOOT===========#
+exec feh --bg-fill /home/user/.config/background-image.png
+exec guake
 #============BINDINGS============#
 
 bindsym $mod+d       exec dmenu_run -nb $cDarkback -sb $cMain -p "EXEC" -b

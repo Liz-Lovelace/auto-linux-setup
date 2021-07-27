@@ -24,7 +24,6 @@ echo "PS1='\[\e[31;1m\]\u\[\e[0m\]:\[\e[34;1m\]\W\[\e[0m\]\$ '" >> ~/.bashrc
 touch /etc/background-image.png
 echo 'if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
   exec startx
-  feh –bg-fill /etc/background-image.png
 fi' >> ~/.bashrc
 startx
 
