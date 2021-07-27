@@ -1,0 +1,3 @@
+[submodule "configs/i3/sweet-i3bar"]
+	path = configs/i3/sweet-i3bar
+	url = https://github.com/Mishanya644/sweet-i3bar
