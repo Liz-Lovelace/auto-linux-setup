@@ -3,9 +3,11 @@
 #============BEHAVIOUR============#
 set $mod Mod4
 
-set $cMain "#ff0000"
-set $cBack "#440000"
-set $cDarkback "#220000"
+set $cMain "#f90053"
+set $cDarkMain "#751132"
+set $cLightBack "#630927"
+set $cBack "#330917"
+set $cDarkBack "#000000"
 
 #Define workspaces
 set $ws1 "1"
@@ -104,12 +106,12 @@ bar {
 		separator_symbol "/"
 
 		colors{
-			background #110000
-			statusline #ffdddd
-			separator  #aa0000
-			focused_workspace #ff0000 #880000 #ff6666
-			active_workspace #ff0000 $cBack #ff0000
-			inactive_workspace $cBack $cBack #ff0000
+			background $cDarkBack
+			separator  $cLightBack
+			#                 outline inside    number
+			focused_workspace $cMain $cLightBack $cMain
+			active_workspace $cMain $cBack $cMain
+      inactive_workspace $cBack $cBack $cMain
 		}
 }
 
@@ -119,20 +121,20 @@ default_border pixel 5
 default_floating_border normal 2
 hide_edge_borders smart  #hide edge borders in fullscreen mode
 
-#                       textbord backgr. text    indicator border
-client.focused          $cMain  $cBack #ff4444 $cMain   $cMain
-client.focused_inactive $cMain  $cBack #ff4444 $cBack   $cBack
-client.unfocused        #aa0000  #000000 #aa0000 $cBack   $cBack
-client.urgent           #ffff00  #000000 #aa0000 $cBack   #ffff00
-client.placeholder      #aa0000  #000000 #aa0000 $cBack   #ff00ff
-client.background                $cDarkback
+#                       textbord      backgr.    text        indicator border
+client.focused          $cMain        $cBack     $cMain      $cMain   $cMain
+client.focused_inactive $cMain        $cBack     $cMain      $cBack   $cBack
+client.unfocused        $cDarkMain    #000000    $cDarkMain  $cBack   $cBack
+client.urgent           #ffff00       #000000    $cLightBack $cBack   #ffff00
+client.placeholder      #aa0000       #000000    $cLightBack $cBack   #ff00ff
+client.background                     $cDarkBack
 
 #===========AFTER BOOT===========#
 exec feh --bg-fill /home/user/.config/background-image.png
 exec guake
 #============BINDINGS============#
 
-bindsym $mod+d       exec dmenu_run -nb $cDarkback -sb $cMain -p "EXEC" -b
+bindsym $mod+d       exec dmenu_run -nb $cDarkBack -sb $cMain -p "EXEC" -b
 bindsym Print        exec flameshot gui
 bindsym $mod+t       exec st -f "iosevka\-splendid:size=11.5"
 bindsym $mod+Shift+t exec cool-retro-term
