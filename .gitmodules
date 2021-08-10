@@ -1,3 +1,6 @@
 [submodule "configs/i3/sweet-i3bar"]
 	path = configs/i3/sweet-i3bar
 	url = https://github.com/Mishanya644/sweet-i3bar
+[submodule "configs/i3/dmount"]
+	path = configs/i3/dmount
+	url = https://github.com/Mishanya644/dmount
