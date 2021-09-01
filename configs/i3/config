@@ -132,6 +132,7 @@ client.background                     $cDarkBack
 #===========AFTER BOOT===========#
 exec feh --bg-fill /home/user/.config/background-image.png
 exec guake
+exec xfce4-power-manager
 #============BINDINGS============#
 
 bindsym $mod+d       exec dmenu_run -nb $cDarkBack -sb $cMain -p "EXEC" -b
