@@ -1,3 +1,5 @@
+cat ./setup.sh > progress.txt
+echo "=========starting doing stuff...=========" > progress.txt
 touch progress.txt
 sudo apt update -y 
 sudo apt upgrade -y
@@ -15,7 +17,9 @@ echo "st" >> progress.txt
 echo "guake" >> progress.txt 
 sudo ./modules/google-chrome.sh
 echo "google chrome" >> progress.txt 
-sudo apt install -y flameshot ffmpeg git mpv pavucontrol screen ssh tree thunar xclip youtube-dl feh
+sudo ./modules/motd.sh
+echo "motd" > progress.txt
+sudo apt install -y git flameshot ffmpeg mpv pavucontrol screen ssh tree thunar xclip youtube-dl feh xfce4-power-manager
 echo "all the other apt stuff" >> progress.txt 
 #sudo apt install -y ranger   pick a different one....
 #changes your command prompt
@@ -27,6 +31,4 @@ echo 'if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 fi' >> ~/.bashrc
 startx
 
-echo "DONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" >> progress.txt 
-echo "DONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" >> progress.txt 
 echo "DONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" >> progress.txt 
