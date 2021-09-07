@@ -1,0 +1,15 @@
+git
+flameshot
+ffmpeg
+mpv
+pavucontrol
+screen
+ssh
+tree
+thunar
+xclip
+feh
+xfce4-power-manager
+wicd
+toilet
+cowsay

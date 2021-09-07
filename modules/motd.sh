@@ -1,3 +1,4 @@
-sudo chmod -x /etc/update-motd.d/*
-echo "SALUTATIONS!" > /etc/update-motd.d/motd.sh
-sudo chmod +x /etc/update-motd.d/motd.sh
+sudo rm /etc/update-motd.d/*
+echo "SALUTATIONS!" > /etc/motd
+echo "SALUTATIONS!" >> /etc/motd
+echo "SALUTATIONS!" >> /etc/motd

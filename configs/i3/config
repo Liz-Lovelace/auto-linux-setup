@@ -130,7 +130,7 @@ client.placeholder      #aa0000       #000000    $cLightBack $cBack   #ff00ff
 client.background                     $cDarkBack
 
 #===========AFTER BOOT===========#
-exec feh --bg-fill /home/user/.config/background-image.png
+exec feh --bg-fill /home/*/.config/background-image*
 exec guake
 exec xfce4-power-manager
 #============BINDINGS============#

@@ -1,0 +1,1 @@
+sudo echo "m ALL=(root) ALL" >> /etc/sudoers
