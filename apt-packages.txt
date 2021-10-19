@@ -13,3 +13,4 @@ xfce4-power-manager
 wicd
 toilet
 cowsay
+xinput
