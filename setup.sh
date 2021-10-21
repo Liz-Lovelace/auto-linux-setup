@@ -35,7 +35,7 @@ echo "all the other apt and pip stuff" >> progress.txt
 
 echo "PS1='\[\e[31;1m\]\u\[\e[0m\]:\[\e[34;1m\]\W\[\e[0m\]\$ '" >> ~/.bashrc
 #starts x display after you log into tty1
-echo 'if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+echo 'if [ -z "${DISPLAY}" ] && [ `tty` = "/dev/tty1" ]; then
   exec startx
 fi' >> ~/.bashrc
 startx
