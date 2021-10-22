@@ -34,6 +34,8 @@ echo "all the other apt and pip stuff" >> progress.txt
 #sudo apt install -y ranger   pick a different one....
 
 echo "PS1='\[\e[31;1m\]\u\[\e[0m\]:\[\e[34;1m\]\W\[\e[0m\]\$ '" >> ~/.bashrc
+#this adds user m to group input in order to grant them permission to use keyboard and mouse in X
+sudo usermod -a -G input m
 #starts x display after you log into tty1
 echo 'if [ -z "${DISPLAY}" ] && [ `tty` = "/dev/tty1" ]; then
   exec startx
