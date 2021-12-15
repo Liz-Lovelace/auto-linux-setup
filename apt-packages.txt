@@ -1,4 +1,3 @@
-git
 flameshot
 ffmpeg
 mpv
@@ -10,7 +9,6 @@ thunar
 xclip
 feh
 xfce4-power-manager
-wicd
 toilet
 cowsay
 xinput

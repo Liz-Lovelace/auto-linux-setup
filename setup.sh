@@ -8,6 +8,10 @@ sudo echo "admin rights, baby!"
 mkdir ~/.config
 sudo mkdir /root/.config
 
+sudo apt install git -y
+git config --global user.name mishanya644
+git config --global user.email ivanov0604041@gmail.com
+
 ./modules/micro.sh
 echo "micro" >> progress.txt 
 
@@ -41,8 +45,3 @@ echo 'if [ -z "${DISPLAY}" ] && [ `tty` = "/dev/tty1" ]; then
   exec startx
 fi' >> ~/.bashrc
 startx
-
-./modules/guake.sh
-echo "guake" >> progress.txt 
-
-echo "DONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" >> progress.txt 
