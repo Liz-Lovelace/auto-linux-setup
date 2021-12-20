@@ -13,3 +13,4 @@ toilet
 cowsay
 xinput
 acpi
+unzip

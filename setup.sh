@@ -35,6 +35,9 @@ done
 sudo pip3 install youtube-dl
 echo "all the other apt and pip stuff" >> progress.txt 
 
+sudo apt install isenkram
+sudo isenkram-autoinstall-firmware
+
 #sudo apt install -y ranger   pick a different one....
 
 echo "PS1='\[\e[31;1m\]\u\[\e[0m\]:\[\e[34;1m\]\W\[\e[0m\]\$ '" >> ~/.bashrc
