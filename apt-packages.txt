@@ -12,3 +12,4 @@ xfce4-power-manager
 toilet
 cowsay
 xinput
+acpi
