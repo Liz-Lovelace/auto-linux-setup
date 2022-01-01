@@ -14,3 +14,7 @@ cowsay
 xinput
 acpi
 unzip
+rsync
+nodejs
+libreoffice
+anki
