@@ -7,3 +7,4 @@ git clone https://github.com/Mishanya644/config-i3
 mv config-i3 i3
 cd i3
 git clone https://github.com/Mishanya644/sweet-i3bar
+git clone https://github.com/Mishanya644/dmount
