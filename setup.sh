@@ -19,8 +19,8 @@ echo "micro" >> progress.txt
 touch ~/.config/background-image.png
 echo "i3" >> progress.txt 
 
-./modules/st.sh
-echo "st" >> progress.txt 
+./modules/alacritty.sh
+echo "alacritty" >> progress.txt 
 
 sudo ./modules/google-chrome.sh
 echo "google chrome" >> progress.txt 
@@ -40,7 +40,7 @@ sudo isenkram-autoinstall-firmware
 
 #sudo apt install -y ranger   pick a different one....
 
-echo "PS1='\[\e[31;1m\]\u\[\e[0m\]:\[\e[34;1m\]\W\[\e[0m\]\$ '" >> ~/.bashrc
+echo "PS1='\[\e[31;1m\]\u\[\e[0m\] \[\e[34;1m\]\w\[\e[0m\] '" >> ~/.bashrc
 #this adds user m to group input in order to grant them permission to use keyboard and mouse in X
 sudo usermod -a -G input m
 #starts x display after you log into tty1

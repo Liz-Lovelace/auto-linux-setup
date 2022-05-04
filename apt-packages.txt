@@ -16,5 +16,9 @@ acpi
 unzip
 rsync
 nodejs
+npm
 libreoffice
 anki
+qbittorrent
+zip
+libnotify-bin
