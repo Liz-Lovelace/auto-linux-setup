@@ -12,6 +12,9 @@ sudo apt install git -y
 git config --global user.name mishanya644
 git config --global user.email ivanov0604041@gmail.com
 
+echo '# for alacritty to display properly on multiple monitors
+export WINIT_X11_SCALE_FACTOR=1.33' >> .bashrc
+
 ./modules/micro.sh
 echo "micro" >> progress.txt 
 
@@ -43,6 +46,11 @@ sudo isenkram-autoinstall-firmware
 echo "PS1='\[\e[31;1m\]\u\[\e[0m\] \[\e[34;1m\]\w\[\e[0m\] '" >> ~/.bashrc
 #this adds user m to group input in order to grant them permission to use keyboard and mouse in X
 sudo usermod -a -G input m
+
+echo "PATH=$HOME/scripts:$PATH
+PATH=/home/m/.local/bin:$PATH
+PATH=/home/m/.cargo/bin:$PATH
+export PATH" >> ~/.bashrc
 #starts x display after you log into tty1
 echo 'if [ -z "${DISPLAY}" ] && [ `tty` = "/dev/tty1" ]; then
   exec startx
