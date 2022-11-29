@@ -214,15 +214,15 @@ colors:
   # Search colors
   #
   # Colors used for the search bar and match highlighting.
-  #search:
+  search:
     # Allowed values are CellForeground/CellBackground, which reference the
     # affected cell, or hexadecimal colors like #ff00ff.
-    #matches:
-    #  foreground: '#000000'
-    #  background: '#ffffff'
-    #focused_match:
-    #  foreground: '#ffffff'
-    #  background: '#000000'
+    matches:
+      foreground: '#ff0000'
+      background: '#ffffff'
+    focused_match:
+      foreground: '#ffffff'
+      background: '#ff0000'
 
     #bar:
     #  background: '#c5c8c6'
@@ -263,8 +263,8 @@ colors:
   # Allowed values are CellForeground/CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
   #selection:
-  #  text: CellBackground
-  #  background: CellForeground
+  #  text: '#ff0000'
+  #  background: '#ff0000'
 
   # Normal colors
   normal:
@@ -279,7 +279,7 @@ colors:
 
   # Bright colors
   bright:
-    black:   '#0e0c0b'
+    black:   '#cecccb'
     red:     '#ff0000'
     green:   '#8bec55'
     yellow:  '#ff9c00'
@@ -293,7 +293,7 @@ colors:
   # If the dim colors are not set, they will be calculated automatically based
   # on the `normal` colors.
   #dim:
-  #  black:   '#131415'
+  #  black:   '#ff0000'
   #  red:     '#864343'
   #  green:   '#777c44'
   #  yellow:  '#9e824c'
