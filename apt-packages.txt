@@ -23,3 +23,5 @@ qbittorrent
 zip
 libnotify-bin
 entr
+speedtest-cli
+git-delta
