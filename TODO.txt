@@ -1,0 +1,3 @@
+server unattended upgrades
+fail2ban
+ufw
