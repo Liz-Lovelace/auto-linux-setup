@@ -16,4 +16,5 @@ else
     filetype indent on
 endif
 
+set number
 set relativenumber
