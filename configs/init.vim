@@ -11,10 +11,25 @@ filetype plugin indent on
 if exists("+smartindent")
     " 'smartindent' is an oldstyle method of autoindenting, only use it when no
     " filetype plugin exists
-    set smartindent
+    " set smartindent
 else
-    filetype indent on
 endif
+filetype indent off
 
 set number
 set relativenumber
+" set colorcolumn=120
+
+autocmd BufRead,BufNewFile *.hbs set filetype=html
+
+call plug#begin()
+
+Plug 'ibhagwan/fzf-lua', {'branch': 'main'}
+Plug 'sheerun/vim-polyglot'
+
+call plug#end()
+
+nnoremap <c-P> <cmd>lua require('fzf-lua').files()<CR>
+
+colorscheme liztheme
+

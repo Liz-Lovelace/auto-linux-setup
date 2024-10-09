@@ -1,0 +1,8 @@
+=========starting to do stuff...=========
+done upgrading
+micro
+i3
+st
+google chrome
+motd
+all the other apt and pip stuff
